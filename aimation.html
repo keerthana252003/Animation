@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>animations</title>
+<style>
+body {
+display: flex;
+margin: 0;
+background: pink;
+}
+.box {
+width: 100px;
+height: 100px;
+background:yellow;
+position: relative;
+text-align: center;
+padding: 30px;
+border-style: groove;
+animation-name: move;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+}
+@keyframes move {
+0%   {
+ left:0;top:0;right:0;bottom:0;background:red;}
+50%  { 
+ left:100;top:100;right:100;bottom:100;background:orange;}
+100% { 
+ left:200;top:200;background:green;}
+    }
+@media (width:600px) {
+body {
+background:blue;
+}}
+</style>
+</head>
+<body>
+<div class="box"><p>Hii, I'am keerthana</p></div><br>
+<div class="box"><p>I'am web developer</p></div>
+
+</body>
+</html>
